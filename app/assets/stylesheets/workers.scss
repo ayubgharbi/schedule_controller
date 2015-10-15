@@ -1,38 +1,206 @@
 // Place all the styles related to the Workers controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+$green: #97D818;
+$blue1: #0F1F2F;
+$blue2: #0C2235;
+$white: #C6D8C8;
+$border: #475C5C;
+body {
+	background-color: $blue2;
+}
+p {
+	color: $white;
+}
+header {
+	height : 80px;
+	background-color: $blue1;
+	border-bottom: 3px solid $green;
+	h1 {
+		color: $white;
+		position: relative;
+		top: 35px;
+		left: 20px;
+	}
+}
 main {
-	h1, table, th, td {
+	height: 500px;
+	table, th, td {
+		text-align: center;
 		padding: 10px;
 	}
 
 	h1 {
-		color: green;
+		color: $white;
+		position: relative;
+		left: 540px;
+		top: 40px;
+	}
+
+	table {
+		position: relative;
+		left: 280px;
+		top: 50px;
+		border: 3px solid $border;
+		border-radius: 3px;
+
 	}
 
 	thead {
 		font-size: 20px;
+		color: $white;
+	}
+
+	tbody {
+		color: $green;
 	}
 
 	.btn {
-		decoration: none;
-		padding: 10px 5px 10px 5px;
+		text-decoration: none;
+		padding: 5px 10px 5px 10px;
 		border: 1px solid black;
+		border-radius: 3px;
+		font-weight: bold;
 	}
 
 	.btn-blue {
-		background-color: blue;
+		background-color: #186CFF;
 		color: black;
+	}
+
+	.btn-blue:hover {
+		background-color: black;
+		color: #186CFF;
 	}
 
 	.btn-green {
-		background-color: green;
+		background-color: $green;
 		color: black;
 	}
 
+	.btn-green:hover {
+		background-color: black;
+		color: $green;
+	}
+
 	.btn-red {
-		background-color: red;
+		background-color: #BC0505;
 		color: black;
+	}
+
+	.btn-red:hover {
+		background-color: black;
+		color: #BC0505;
+	}
+}
+
+.worker-new {
+	text-decoration: none;
+	padding: 5px 10px 5px 10px;
+	border: 1px solid black;
+	border-radius: 3px;
+	font-weight: bold;
+	position: relative;
+	top: 50px;
+	left: 290px;
+	background-color: black;
+	color: $green;
+	font-size: 12px;
+}
+
+.worker-new:hover {
+	background-color: black;
+	color: $green;
+}
+
+/* new */
+
+.field, .actions, #back-btn {
+	position: relative;
+	top: 60px;
+	left: 500px;
+}
+.titles {
+	color: $green;
+	font-weight: bold;	
+}
+
+.n-work {
+ 	text-decoration: none;
+	padding: 5px 10px 5px 10px;
+	border: 1px solid black;
+	border-radius: 3px;
+	font-weight: bold;
+	background-color: black;
+	color: $green;
+	font-size: 12px;
+}
+
+.n-work:hover {
+	background-color: $green;
+	color: black;
+}
+
+.back-btn {
+	text-decoration: none;
+	padding: 5px 10px 5px 10px;
+	border: 1px solid black;
+	border-radius: 3px;
+	font-weight: bold;
+	background-color: black;
+	color: $green;
+	font-size: 12px;
+	position: relative;
+	top: 60px;
+	left: 500px;
+}
+
+.back-btn1 {
+	text-decoration: none;
+	padding: 5px 10px 5px 10px;
+	border: 1px solid black;
+	border-radius: 3px;
+	font-weight: bold;
+	background-color: black;
+	color: $green;
+	font-size: 12px;
+}
+
+.back-btn:hover {
+	background-color: $green;
+	color: black;
+}
+
+.back-btn1:hover {
+	background-color: $green;
+	color: black;
+}
+
+.p-show {
+	color: $green;
+	position: relative;
+	top: 100px;
+	left: 500px;
+}
+
+.show-btns {
+	position: relative;
+	top: 110px;
+	left: 500px;
+}
+
+/* footer */
+
+footer {
+	height: 50px;
+	background-color: $blue1;
+	color: $white;
+	font-size: 20px;
+	font-weight: bold;
+	border-top: 3px solid $green;
+	p {
+	position: relative;
+	top: 10px;
+	left: 15px;
 	}
 }
