@@ -1,24 +1,24 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<p class="p-show">
   <strong>First name:</strong>
   <%= @worker.first_name %>
 </p>
 
-<p>
+<p class="p-show">
   <strong>Last name:</strong>
   <%= @worker.last_name %>
 </p>
 
-<p>
+<p class="p-show"> 
   <strong>Birthday:</strong>
   <%= @worker.birthday %>
 </p>
 
-<p>
+<p class="p-show">
   <strong>Salary:</strong>
   <%= @worker.salary %>
 </p>
 
-<%= link_to 'Edit', edit_worker_path(@worker) %> |
-<%= link_to 'Back', workers_path %>
+<%= link_to 'Edit', edit_worker_path(@worker), :class => "back-btn1 show-btns"%> |
+<%= link_to 'Back', workers_path, :class => "back-btn1 show-btns"%>

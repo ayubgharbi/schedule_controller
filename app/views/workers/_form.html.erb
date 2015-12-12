@@ -12,22 +12,22 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :first_name %><br>
+    <%= f.label :first_name, :class=> "titles" %><br>
     <%= f.text_field :first_name %>
   </div>
   <div class="field">
-    <%= f.label :last_name %><br>
+    <%= f.label :last_name, :class=> "titles"  %><br>
     <%= f.text_field :last_name %>
   </div>
   <div class="field">
-    <%= f.label :birthday %><br>
+    <%= f.label :birthday, :class=> "titles" %><br>
     <%= f.datetime_select :birthday %>
   </div>
   <div class="field">
-    <%= f.label :salary %><br>
+    <%= f.label :salary, :class=> "titles" %><br>
     <%= f.text_field :salary %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit :class=> "n-work"%>
   </div>
 <% end %>
